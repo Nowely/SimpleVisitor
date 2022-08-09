@@ -3,8 +3,7 @@
 public interface IVisitable
 {
 }
-
-public interface ITargetVisitor<in T>
+public interface ITargetVisitor<in T> //TODO where T : IVisitable ?
 {
     void Visit(T item);
 }
